@@ -92,7 +92,7 @@ local function populatePanel( panel )
 
                 -- Only look at numbers
                 if isnumber( value ) then
-                    local defaultValue = defaultWeaponData[wepClass].Primary[property]
+                    local defaultValue = defaultWeaponData[wepClass][property]
 
                     -- Create the row, estimate the max value, hook up the onChange callback
                     local row = editor:CreateRow( categoryName, property )
