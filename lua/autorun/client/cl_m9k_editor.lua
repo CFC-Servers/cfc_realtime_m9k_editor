@@ -2,8 +2,8 @@ if not CLIENT then return end
 
 print("RUNNING CLIENT M9K CODE")
 
-local defaultWeaponData = {}
-local weaponsByCategory = {}
+defaultWeaponData = {}
+weaponsByCategory = {}
 
 -- className: <bool>
 local dirtyStatus = {}
@@ -43,7 +43,7 @@ local function populatePanel( panel )
     -- Tree
     local tree = vgui.Create( "DTree", panel )
     tree:Dock( TOP )
-    tree:SetHeight( 300 )
+    tree:SetHeight( 450 )
 
     -- Create all of the category folders and all weapons therein
     for category, weps in pairs( weaponsByCategory ) do
